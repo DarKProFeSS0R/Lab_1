@@ -39,14 +39,14 @@ public class FibonacciNumber {
     }
 
     public static void printFibonacciNumbers(List<FibonacciNumber> fibonacciNumbers) {
-        System.out.println("Згенеровані числа Фібоначчі:");
+        System.out.println("Згенерованi числа Фiбоначчi:");
         for (FibonacciNumber fibNumber : fibonacciNumbers) {
             System.out.println(fibNumber);
         }
     }
 
     public static void printValidFibonacciNumbers(List<FibonacciNumber> fibonacciNumbers) {
-        System.out.println("Числа Фібоначчі, які можна представити у формі w^2+1:");
+        System.out.println("Числа Фібоначчi, якi можна представити у формi w^2+1:");
         for (FibonacciNumber fibNumber : fibonacciNumbers) {
             long value = fibNumber.getValue();
             long sqrtValue = (long) Math.sqrt(value - 1);
@@ -62,7 +62,7 @@ public class FibonacciNumber {
             n = Integer.parseInt(args[0]);
         } else {
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Введіть кількість чисел Фібоначчі, які ви хочете згенерувати: ");
+            System.out.print("Введiть кiлькiсть чисел Фiбоначчi, якi ви хочете згенерувати: ");
             if (scanner.hasNextInt()) {
                 n = scanner.nextInt();
             } else {
